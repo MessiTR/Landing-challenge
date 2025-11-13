@@ -1,2 +1,2 @@
 # Landing-challenge
-Landing page entrega
+# Landing page entrega - Gadiel Vásquez
