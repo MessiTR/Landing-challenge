@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón del Grano - Club de Café</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <span class="brand-logo">El Rincón del Grano</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                
+                <div class="hero-text">
+                    <h1>Descubre el verdadero sabor del café.</h1>
+                    <p class="subtitle">Únete a nuestro club exclusivo y recibe un <strong>10% de descuento</strong> en tu primer pedido de grano seleccionado.</p>
+                    <ul class="features">
+                        <li>✓ Grano 100% Arábica de origen.</li>
+                        <li>✓ Tostado artesanal cada semana.</li>
+                        <li>✓ Envío directo a tu puerta.</li>
+                    </ul>
+                </div>
+
+                <div class="form-container" id="form-container">
+                    <form class="lead-form" id="lead-form">
+                        <h2>¡Obtén tu descuento!</h2>
+                        <p>Solo déjanos tus datos y te enviaremos el cupón.</p>
+                        
+                        <div class="input-group">
+                            <label for="name">Tu Nombre:</label>
+                            <input type="text" id="name" name="name" placeholder="Ej: Ana" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="email">Tu Correo:</label>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                        </div>
+                        
+                        <button type="submit" class="cta-button">QUIERO MI 10% AHORA</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/app.js"></script>
+
+</body>
+</html>

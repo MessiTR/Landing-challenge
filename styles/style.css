@@ -1,0 +1,192 @@
+/* --- Reseteo y Globales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* --- Tipografía --- */
+h1, h2, .brand-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* --- Header --- */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 10;
+}
+
+.brand-logo {
+    font-size: 1.8rem;
+    color: #4a2c2a; /* Marrón oscuro */
+}
+
+/* --- Sección Hero (Principal) --- */
+.hero {
+    position: relative;
+    min-height: 90vh;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    color: #ffffff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55); /* Capa oscura para legibilidad */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* --- Columna Izquierda: Texto --- */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* --- Columna Derecha: Formulario --- */
+.form-container {
+    flex: 1;
+    max-width: 450px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0, 0.15);
+}
+
+.lead-form h2 {
+    color: #6f4e37; /* Marrón medio */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lead-form p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+.cta-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6f4e37; /* Marrón medio */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4a2c2a; /* Marrón oscuro */
+}
+
+/* --- Mensaje de "Gracias" (del JS) --- */
+.thank-you-message {
+    text-align: center;
+    padding: 20px;
+}
+.thank-you-message h1 {
+    color: #2ecc71; /* Verde */
+}
+.thank-you-message strong {
+    color: #6f4e37;
+    font-size: 1.1rem;
+}
+
+/* --- Responsive (Móviles) --- */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .features {
+        text-align: left;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
